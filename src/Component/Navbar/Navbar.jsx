@@ -11,7 +11,7 @@ export default function Navbar() {
 
         <div className='menu'>
 
-            <img src="https://raw.githubusercontent.com/CodeCompleteYT/react-portfolio/main/assets/nav/menuIcon.png" alt="" /> {/*temporary img*/}
+            <img className='menuBtn' src="https://raw.githubusercontent.com/CodeCompleteYT/react-portfolio/main/assets/nav/menuIcon.png" alt="Menu Button" /> {/*temporary img*/}
 
             <ul className='menuItems'>
                 <li>
