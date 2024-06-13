@@ -26,7 +26,11 @@ export default function Navbar() {
                     
             /> 
 
-            <ul className={`${styles.menuItems} ${menuOpen && styles.menuOpen}`}>
+            <ul 
+                className={`${styles.menuItems} ${menuOpen && styles.menuOpen}`}
+                onClick={() => setMenuOpen(false)}
+
+            >
                 <li>
                     <a href="#about">About</a>
                 </li>
