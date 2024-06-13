@@ -3,6 +3,9 @@ import './Navbar.css'
 // import menuIcon from "https://raw.githubusercontent.com/CodeCompleteYT/react-portfolio/main/assets/nav/menuIcon.png";
 
 export default function Navbar() {
+
+    const [menuOpen, setMenuOpen] = useState(false)
+
   return (
     <nav className='navbarStyling'>
         <a className='title' href="/">Portfolio</a>
@@ -11,7 +14,15 @@ export default function Navbar() {
 
         <div className='menu'>
 
-            <img className='menuBtn' src="https://raw.githubusercontent.com/CodeCompleteYT/react-portfolio/main/assets/nav/menuIcon.png" alt="Menu Button" /> {/*temporary img*/}
+            <img className='menuBtn' 
+                src={menuOpen 
+                    ? ("https://raw.githubusercontent.com/CodeCompleteYT/react-portfolio/main/assets/nav/closeIcon.png") 
+                    : ("https://raw.githubusercontent.com/CodeCompleteYT/react-portfolio/main/assets/nav/menuIcon.png")    
+                    }
+                    alt="Menu Button" 
+                    onClick={() => setMenuOpen(!menuOpen)}
+                    
+            /> 
 
             <ul className='menuItems'>
                 <li>
