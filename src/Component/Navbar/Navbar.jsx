@@ -1,20 +1,22 @@
 import React, { useState }  from 'react'
-import './Navbar.css'
+import styles from './Navbar.module.css'
 // import menuIcon from "https://raw.githubusercontent.com/CodeCompleteYT/react-portfolio/main/assets/nav/menuIcon.png";
+
+import {getImageUrl} from '../../utilis'
 
 export default function Navbar() {
 
     const [menuOpen, setMenuOpen] = useState(false)
 
   return (
-    <nav className='navbarStyling'>
-        <a className='title' href="/">Portfolio</a>
+    <nav className={styles.navbarStyling}>
+        <a className={styles.title} href="/">Portfolio</a>
 
 
 
-        <div className='menu'>
+        <div className={styles.menu}>
 
-            <img className='menuBtn' 
+            <img className={styles.menuBtn} 
                 src={menuOpen 
                     ? ("https://raw.githubusercontent.com/CodeCompleteYT/react-portfolio/main/assets/nav/closeIcon.png") 
                     : ("https://raw.githubusercontent.com/CodeCompleteYT/react-portfolio/main/assets/nav/menuIcon.png")    
@@ -24,7 +26,7 @@ export default function Navbar() {
                     
             /> 
 
-            <ul className='menuItems'>
+            <ul className={`${styles.menuItems} ${menuOpen && styles.menuOpen}`}>
                 <li>
                     <a href="#about">About</a>
                 </li>

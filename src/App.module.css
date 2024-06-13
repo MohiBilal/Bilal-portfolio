@@ -1,9 +1,9 @@
-*{
+/* *{
   box-sizing: border-box;
   margin: 0;
   font-family:'outfit','Arial','Helvetica','sans-serif';
-}
-
+} */
+@import "./vars.css";
 .App{
   background-color: #04152d;
   height: 100%;

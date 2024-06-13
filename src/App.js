@@ -1,10 +1,10 @@
 import logo from './logo.svg';
-import './App.css';
+import styles from './App.module.css';
 import Navbar from './Component/Navbar/Navbar';
 
 function App() {
   return (
-    <div className="App">
+    <div className={styles.App}>
       <Navbar/>
     </div>
   );
