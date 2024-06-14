@@ -9,29 +9,29 @@ export default function About() {
         <div className={styles.content}>
             {/* <img src={getImageUrl("about/aboutImage.png")} alt="icon" /> */}
             <img className={styles.aboutImage} src="https://raw.githubusercontent.com/CodeCompleteYT/react-portfolio/main/assets/about/aboutImage.png" alt="Icon" />
-            <ul>
+            <ul className={styles.aboutItems}>
 
-                <li>
+                <li className={styles.aboutItem}>
                     <img src="https://raw.githubusercontent.com/CodeCompleteYT/react-portfolio/main/assets/about/cursorIcon.png" alt="Cursor Icon" />
-                    <div>
+                    <div className={styles.aboutItemText}>
                         <h1>Frontend developer</h1>
-                        <p>akfnafnaknfaknfaknfkanfkafnkafn</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, corporis. Dolorum, nulla tempora repudiandae corrupti tenetur illo laudantium ratione, veniam distinctio corporis a obcaecati quae! Repellendus consequuntur consequatur ad ipsum.</p>
                     </div>    
                 </li>
 
-                <li>
+                <li className={styles.aboutItem}>
                     <img src="https://raw.githubusercontent.com/CodeCompleteYT/react-portfolio/main/assets/about/serverIcon.png" alt="Server Icon" />
-                    <div>
+                    <div className={styles.aboutItemText}>
                         <h1>Backend developer</h1>
-                        <p>akfnafnaknfaknfaknfkanfkafnkafn</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ducimus veritatis quaerat odio natus blanditiis illum nobis quam eos praesentium! Molestias, iste rem? Assumenda esse quas nulla tenetur odio aliquam.</p>
                     </div>    
                 </li>
 
-                <li>
-                    <img src="https://raw.githubusercontent.com/CodeCompleteYT/react-portfolio/main/assets/about/serverIcon.png" alt="Server Icon" />
-                    <div>
+                <li className={styles.aboutItem}>
+                    <img src="https://raw.githubusercontent.com/CodeCompleteYT/react-portfolio/main/assets/about/serverIcon.png" alt="UI Icon" />
+                    <div className={styles.aboutItemText}>
                         <h1>UI designer</h1>
-                        <p>akfnafnaknfaknfaknfkanfkafnkafn</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae voluptate praesentium soluta. Officia quia officiis eveniet deleniti cumque quod nulla facere quae dolorum possimus praesentium quo, velit accusantium aliquam sunt.</p>
                     </div>    
                 </li>
 

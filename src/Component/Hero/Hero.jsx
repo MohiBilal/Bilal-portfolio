@@ -6,7 +6,7 @@ export default function Hero() {
     <section className={styles.container}>
         <div className={styles.content}>
             <h1 className={styles.title}>Hi, </h1>
-            <p className={styles.description}>jdnkandkadnkadnk</p>
+            <p className={styles.description}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, sunt doloribus id esse totam ipsam, quasi dignissimos modi laboriosam rerum illo nemo consequatur quis eligendi. Dolor minus suscipit totam consequatur!</p>
             <a className={styles.contactBtn} href="mailto:myemail@email.com">Contact Me</a>
         </div>
 
