@@ -15,8 +15,8 @@ export default function Experience() {
             <div className={styles.skills}>
                 {
                     skills.map((skill, id)=>{
-                        return <div key={id}>
-                                <div>
+                        return <div className={styles.skill} key={id}>
+                                <div className={styles.skillImageContainer}>
                                     <img src={getImageUrl(skill.imageSrc)} alt={skill.title} />
                                 </div>
                                 <p>{skill.title}</p>
@@ -29,15 +29,15 @@ export default function Experience() {
                     history.map((historyItem, id)=>{
                         return <li key={id}>
                             <img src={getImageUrl(historyItem.imageSrc)} alt={`${historyItem.organisation} Logo`} />
-                            <div>
+                            <div className={styles.historyItemDetails}>
                                 <h3>
                                     {`${historyItem.role}, ${historyItem.organisation}`}
                                 </h3>
                                 <p>
                                 {`${historyItem.startDate} - ${historyItem.endDate}`}
                                 </p>
-                                <ul>{historyItem.experiences.map((experience, id)=>{
-                                    return <li key={id}>{experience}</li>
+                                <ul className={styles.history}>{historyItem.experiences.map((experience, id)=>{
+                                    return <li className={styles.historyItem} key={id}>{experience}</li>
                                 }
                                 )}</ul>
                             </div>
