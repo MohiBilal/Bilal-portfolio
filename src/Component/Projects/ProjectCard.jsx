@@ -15,7 +15,7 @@ export default function Projectcard({ project : {title,imageSrc,description,skil
     <ul className={styles.skills}>
         {
             skills.map((skill, id)=>{
-                <li className={styles.skill} key={id}>{skill}</li>
+            return    <li className={styles.skill} key={id}>{skill}</li>
             })
         }
     </ul>
