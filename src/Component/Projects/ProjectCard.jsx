@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './ProjectCard.module.css'
-import { getImageUrl } from '../../utilis'
+import { getImageUrl } from '../../utils'
 
 
 export default function Projectcard({ project : {title,imageSrc,description,skills,demo,source} }) {

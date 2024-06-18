@@ -18,6 +18,10 @@
 
 }
 
+.menuBtn{
+    display: none;
+}
+
 .menu{
     display: flex;
 }
@@ -31,7 +35,22 @@
     font-size: 25px;
     color: white;
     text-decoration: none;
+    transition: 0.3s;
 }
+
+.about:hover {
+    color: rgb(192, 192, 192);
+}
+.experience:hover {
+    color: rgb(192, 192, 192);
+}
+.projects:hover{
+    color: rgb(192, 192, 192);
+}
+.contact:hover{
+    color: rgb(192, 192, 192);
+}
+
 
 
 @media screen and (max-width: 830px){
@@ -42,7 +61,7 @@
     }
 
     .menu {
-        position: relative;
+        position: absolute;
         right: 0;
         margin-right: 10%;
         flex-direction: column;

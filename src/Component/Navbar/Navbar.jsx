@@ -2,7 +2,7 @@ import React, { useState }  from 'react'
 import styles from './Navbar.module.css'
 // import menuIcon from "https://raw.githubusercontent.com/CodeCompleteYT/react-portfolio/main/assets/nav/menuIcon.png";
 
-import {getImageUrl} from '../../utilis'
+import { getImageUrl } from "../../utils";
 
 export default function Navbar() {
 
@@ -16,7 +16,7 @@ export default function Navbar() {
 
         <div className={styles.menu}>
 
-            <img className={styles.menuBtn} 
+            {/* <img className={styles.menuBtn} 
                 src={menuOpen 
                     ? ("https://raw.githubusercontent.com/CodeCompleteYT/react-portfolio/main/assets/nav/closeIcon.png") 
                     : ("https://raw.githubusercontent.com/CodeCompleteYT/react-portfolio/main/assets/nav/menuIcon.png")    
@@ -24,7 +24,18 @@ export default function Navbar() {
                     alt="Menu Button" 
                     onClick={() => setMenuOpen(!menuOpen)}
                     
+            />  */}
+
+            <img className={styles.menuBtn} 
+                src={menuOpen 
+                    ? getImageUrl("nav/closeIcon.png")
+                    : getImageUrl("nav/menuIcon.png")    
+                    }
+                    alt="Menu Button" 
+                    onClick={() => setMenuOpen(!menuOpen)}
+                    
             /> 
+
 
             <ul 
                 className={`${styles.menuItems} ${menuOpen && styles.menuOpen}`}
@@ -32,19 +43,19 @@ export default function Navbar() {
 
             >
                 <li>
-                    <a href="#about">About</a>
+                    <a className={styles.about} href="#about">About</a>
                 </li>
 
                 <li>
-                    <a href="#experience">Experience</a>
+                    <a className={styles.experience} href="#experience">Experience</a>
                 </li>
 
                 <li>
-                    <a href="#projects">Projects</a>
+                    <a  className={styles.projects} href="#projects">Projects</a>
                 </li>
 
                 <li>
-                    <a href="#contact">Contact</a>
+                    <a  className={styles.contact} href="#contact">Contact</a>
                 </li>
             </ul>
         </div>
